@@ -11,7 +11,7 @@ jobs:
 
   first: 
     name: First
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     timeout-minutes: 360
     steps:
     - uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
       run: bash linux-ssh1.sh
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN1 }}
+        NGROK_AUTH_TOKEN1: ${{ secrets.NGROK_AUTH_TOKEN1 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
     - name: Keep Running Ubuntu System and keepAlive
@@ -34,7 +34,7 @@ jobs:
       
   second: 
     name: Second
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     timeout-minutes: 360
     steps:
     - uses: actions/checkout@v2
@@ -47,7 +47,7 @@ jobs:
       run: bash linux-ssh2.sh
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN2 }}
+        NGROK_AUTH_TOKEN2: ${{ secrets.NGROK_AUTH_TOKEN2 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
     - name: Keep Running Ubuntu System and keepAlive
@@ -57,7 +57,7 @@ jobs:
 
   thirth: 
     name: Thirdth
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     timeout-minutes: 360
     steps:
     - uses: actions/checkout@v2
@@ -70,7 +70,7 @@ jobs:
       run: bash linux-ssh3.sh
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN3 }}
+        NGROK_AUTH_TOKEN3: ${{ secrets.NGROK_AUTH_TOKEN3 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
     - name: Keep Running Ubuntu System and keepAlive
@@ -80,7 +80,7 @@ jobs:
       
   fourth: 
     name: Fourth
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     timeout-minutes: 360
     steps:
     - uses: actions/checkout@v2
@@ -93,7 +93,7 @@ jobs:
       run: bash linux-ssh4.sh
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN4 }}
+        NGROK_AUTH_TOKEN4: ${{ secrets.NGROK_AUTH_TOKEN4 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
     - name: Keep Running Ubuntu System and keepAlive
@@ -103,7 +103,7 @@ jobs:
       
   fifth: 
     name: Fifth
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     timeout-minutes: 360
     steps:
     - uses: actions/checkout@v2
@@ -116,7 +116,7 @@ jobs:
       run: bash linux-ssh5.sh
       env:
         LINUX_USER_PASSWORD: ${{ secrets.LINUX_USER_PASSWORD }}
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN5 }}
+        NGROK_AUTH_TOKEN5: ${{ secrets.NGROK_AUTH_TOKEN5 }}
         LINUX_MACHINE_NAME: ${{ secrets.LINUX_MACHINE_NAME }}
         LINUX_USERNAME: ${{ secrets.LINUX_USERNAME }}
     - name: Keep Running Ubuntu System and keepAlive
